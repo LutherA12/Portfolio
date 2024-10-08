@@ -1,0 +1,93 @@
+:root {
+  --animation: fadeAndScale 4s ease-in;
+  --letter-spacing: 2px;
+  --text-shadow: 2px 2px 15px;
+  --green: green;
+  --aliceblue: aliceblue;
+  --silver: silver;
+  --orange: orange;
+  --yellow: yellow;
+  --brown: #312509;
+  --carmine: #9b1d20;
+  --purple: purple;
+  --coral: #fc814a;
+  --sky-blue: #5bc3eb;
+  --sunset: #f7d08a;
+  --jade: #57a773;
+  --vanilla: #e1d89f;
+  --rosewood: #6b0f1a;
+  --lion: #ad8a64;
+  --lapis-lazuli: #416788;
+  --khaki: #c6b38e;
+  --mauveine: #791e94;
+  --gunmetal-green: #1c3738;
+  --royal-blue: #496ddb;
+  --charcoal: #373f51;
+  --flame: #ee5622;
+}
+
+.story-containers {
+  margin-top: 50px;
+  animation: var(--animation);
+  letter-spacing: var(--letter-spacing);
+}
+
+/*ALL DRIVE STORY CONTAINERS*/
+
+.drive {
+  text-shadow: var(--text-shadow) var(--green);
+}
+
+.drive-basket {
+  text-shadow: var(--text-shadow) var(--aliceblue);
+}
+
+.drive-cart {
+  text-shadow: var(--text-shadow) var(--silver);
+}
+
+.drive-neither {
+  text-shadow: var(--text-shadow) var(--orange);
+}
+
+.drive-b-rush {
+  text-shadow: var(--text-shadow) var(--carmine);
+}
+
+.drive-b-run {
+  text-shadow: var(--text-shadow) var(--brown);
+}
+
+.drive-c-rush {
+  text-shadow: var(--text-shadow) var(--carmine);
+}
+
+.drive-c-run {
+  text-shadow: var(--text-shadow) var(--brown);
+}
+
+.drive-n-rush {
+  text-shadow: var(--text-shadow) var(--carmine);
+}
+
+.drive-n-run {
+  text-shadow: var(--text-shadow) var(--brown);
+}
+
+/*ALL WALK STORY CONTAINERS*/
+
+.walk {
+  text-shadow: var(--text-shadow) var(--yellow);
+}
+
+.walk-basket {
+  text-shadow: var(--text-shadow) var(--aliceblue);
+}
+
+.walk-cart {
+  text-shadow: var(--text-shadow) var(--silver);
+}
+
+.walk-neither {
+  text-shadow: var(--text-shadow) var(--orange);
+}

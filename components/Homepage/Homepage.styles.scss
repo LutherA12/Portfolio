@@ -1,0 +1,94 @@
+.home-page-container {
+  padding-top: 5vh;
+  font-size: 37px;
+  width: 85vw;
+  margin: auto;
+
+  .main-intro-container {
+    text-align: center;
+
+    .heading-container {
+      height: 50px;
+      width: 130px;
+      margin: auto;
+    }
+
+    .heading,
+    .intro {
+      text-decoration: none;
+    }
+
+    .intro-container {
+      height: 50px;
+      width: 400px;
+      margin: auto;
+    }
+
+    .intro-text-container {
+      margin: auto;
+      padding-top: 25px;
+    }
+
+    .image-container {
+      width: 300px;
+      height: 300px;
+      margin: auto;
+
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+      }
+    }
+
+    .github-link {
+      color: var(--accentColor);
+      text-decoration: underline;
+    }
+  }
+}
+
+.text-containers {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.accents {
+  color: var(--accentColor);
+}
+
+.animate {
+  transform: scale(1.2);
+  color: var(--background-color);
+}
+
+.divider {
+  width: 300px;
+  height: 3px;
+  background-color: var(--accentColor);
+  margin: 7vh auto;
+  border-radius: 3px;
+}
+
+.main-body-container {
+  margin: auto;
+  text-align: center;
+  width: 85vw;
+  height: 89rem;
+}
+
+.main-footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.crown-card-link {
+  color: var(--crown-color);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

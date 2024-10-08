@@ -1,0 +1,67 @@
+body {
+  background-color: var(--background-color);
+  color: aliceblue;
+
+  h3 {
+    padding-bottom: 50px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+  }
+}
+
+.articles-gpt3 {
+  padding: 125px 180px;
+  text-align: center;
+  margin: 1px auto 0 auto;
+  max-width: 55vw;
+  border-radius: 520px;
+  letter-spacing: 1px;
+  font-size: var(--article-font);
+}
+
+.articles-danger {
+  padding: 110px 120px;
+  text-align: center;
+  margin: 1px auto 0 auto;
+  max-width: 53vw;
+  border-radius: 470px;
+  letter-spacing: 1px;
+  font-size: var(--article-font);
+}
+
+.articles-data {
+  padding: 100px;
+  text-align: center;
+  margin: 60px auto 0 auto;
+  max-width: 40vw;
+  border-radius: 400px;
+  letter-spacing: 1px;
+  font-size: var(--article-font);
+}
+
+.articles-breaking {
+  padding: 90px;
+  text-align: center;
+  margin: 70px auto 0 auto;
+  max-width: 40vw;
+  border-radius: 400px;
+  letter-spacing: 1px;
+  font-size: var(--article-font);
+}
+
+.articles-point {
+  padding: 100px;
+  text-align: center;
+  margin: 70px auto 0 auto;
+  max-width: 40vw;
+  border-radius: 400px;
+  letter-spacing: 1px;
+  font-size: var(--article-font);
+}
+
+.articles-home-link {
+  &:hover {
+    text-decoration: underline;
+    color: var(--accentColor);
+  }
+}

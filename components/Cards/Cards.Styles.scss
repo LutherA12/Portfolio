@@ -1,0 +1,132 @@
+.main-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  overflow: hidden;
+  height: 169vh;
+  flex-wrap: wrap;
+
+  .gpt3-card-container {
+    box-shadow: 2px 2px 2px 2px var(--gpt3-color);
+  }
+
+  .wild-card-container {
+    box-shadow: 0px 0px 2px 2px var(--wild-waves-color);
+  }
+
+  .monster-card-container {
+    box-shadow: -2px 2px 2px 2px var(--monster-color);
+  }
+
+  .zstory-card-container {
+    box-shadow: 2px 2px 2px 2px var(--zstory-color);
+  }
+
+  .crown-card-container {
+    box-shadow: -2px 2px 2px 2px var(--text-color);
+  }
+
+  .card-containers {
+    border: solid 2px var(--accentColor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 635px;
+    width: 412px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px 25px 0 25px;
+
+    .gpt3-card-link {
+      color: var(--gpt3-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .wild-card-link {
+      color: var(--wild-waves-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .monster-card-link {
+      color: var(--monster-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .zstory-card-link {
+      color: var(--zstory-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .image-links {
+      width: var(--link-img-width);
+      height: var(--link-img-height);
+      border-radius: 10px;
+    }
+
+    .ai-desc {
+      color: var(--gpt3-color);
+    }
+
+    .wild-desc {
+      color: var(--wild-waves-color);
+      line-height: 22px;
+    }
+
+    .monster-desc {
+      color: var(--monster-color);
+      line-height: 22px;
+    }
+
+    .zstory-desc {
+      color: var(--zstory-color);
+      line-height: 22px;
+    }
+
+    .crown-desc {
+    }
+
+    .image-link-desc {
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin-top: 15px;
+    }
+
+    .ai-card-title {
+      width: 5vw;
+    }
+
+    .monster-card-title {
+      width: 13vw;
+    }
+
+    .zstory-card-title {
+      width: 6vw;
+    }
+
+    .wild-card-title {
+      width: 9vw;
+    }
+
+    .crown-title {
+    }
+
+    .card-titles {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+}

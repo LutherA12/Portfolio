@@ -1,0 +1,70 @@
+.z-story-intro-container {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  font-size: 36px;
+  text-shadow: 2px 2px 15px red;
+  letter-spacing: 3px;
+  .intro-one {
+    animation: fadeAndScale 3.5s cubic-bezier(1, 0.03, 0, -1.14);
+  }
+
+  .intro-two {
+    animation: fadeAndScale 7s ease-in;
+  }
+
+  .intro-three {
+    animation: fadeAndScale 10s ease-in;
+  }
+}
+
+.intro-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 50vw;
+  margin: 0 auto;
+  margin-top: 45px;
+  animation: fadeAndScale 13s ease-in;
+
+  .intro-buttons {
+    color: rgba(250, 235, 215, 0.74);
+    padding: 20px;
+    transition: padding 2s ease, background-color 2s ease, color 2s ease;
+    border-radius: 20px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    cursor: pointer;
+
+    &:hover {
+      padding: 25px;
+    }
+  }
+}
+
+.play-button {
+  background-color: red;
+  color: black;
+
+  &:hover {
+    background-color: rgba(255, 0, 0, 0.342);
+    color: red;
+  }
+}
+
+.quit-button {
+  background-color: blue;
+
+  &:hover {
+    background-color: rgba(0, 0, 255, 0.514);
+    color: blue;
+  }
+}
+
+.intro-story-container {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+  text-shadow: 2px 2px 15px red;
+  animation: fadeAndScale 4s ease-in;
+}

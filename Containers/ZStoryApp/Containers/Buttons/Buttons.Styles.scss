@@ -1,0 +1,208 @@
+:root {
+  --blue: blue;
+  --green: green;
+  --aliceblue: aliceblue;
+  --black: black;
+  --silver: silver;
+  --orange: orange;
+  --yellow: yellow;
+  --brown: #312509;
+  --carmine: #9b1d20;
+  --purple: purple;
+  --coral: #fc814a;
+  --sky-blue: #5bc3eb;
+  --sunset: #f7d08a;
+  --jade: #57a773;
+  --vanilla: #e1d89f;
+  --rosewood: #6b0f1a;
+  --lion: #ad8a64;
+  --lapis-lazuli: #416788;
+  --khaki: #c6b38e;
+  --mauveine: #791e94;
+  --gunmetal-green: #1c3738;
+  --royal-blue: #496ddb;
+  --charcoal: #373f51;
+  --flame: #ee5622;
+}
+
+//ALL FIRST BUTTON STYLES
+
+.first-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 50vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  animation: fadeAndScale 50s ease-in;
+
+  .first-buttons {
+    padding: 20px;
+    transition: all 2s ease;
+    border-radius: 20px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    cursor: pointer;
+
+    &:hover {
+      padding: 25px;
+    }
+  }
+
+  .drive-button {
+    background-color: var(--green);
+
+    &:hover {
+      background-color: rgba(0, 128, 0, 0.411);
+      color: var(--green);
+    }
+  }
+
+  .walk-button {
+    background-color: var(--yellow);
+    color: var(--black);
+
+    &:hover {
+      background-color: rgba(255, 255, 0, 0.404);
+      color: var(--yellow);
+    }
+  }
+
+  .quit-buttonA {
+    background-color: var(--blue);
+    color: var(--aliceblue);
+
+    &:hover {
+      background-color: rgba(0, 0, 255, 0.425);
+      color: var(--blue);
+    }
+  }
+}
+
+//ALL SECOND BUTTON STYLES
+
+.second-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 70vw;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  .second-buttons {
+    padding: 20px;
+    transition: all 2s ease;
+    border-radius: 20px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    -webkit-animation: flicker-in-1 5s linear 17s both;
+    animation: flicker-in-1 5s linear 17s both;
+
+    &:hover {
+      padding: 15px;
+    }
+  }
+
+  .basket-button {
+    background-color: var(--black);
+    color: var(--aliceblue);
+
+    &:hover {
+      background-color: rgb(73, 73, 73);
+      color: var(--black);
+    }
+  }
+
+  .cart-button {
+    background-color: var(--silver);
+    color: var(--black);
+
+    &:hover {
+      background-color: rgba(192, 192, 192, 0.158);
+      color: var(--silver);
+    }
+  }
+
+  .neither-button {
+    background-color: var(--orange);
+    color: var(--black);
+
+    &:hover {
+      background-color: rgba(255, 166, 0, 0.164);
+      color: var(--orange);
+    }
+  }
+
+  .quit-buttonB {
+    background-color: var(--blue);
+    color: var(--aliceblue);
+
+    &:hover {
+      background-color: rgba(0, 0, 255, 0.425);
+      color: var(--blue);
+    }
+  }
+}
+
+//ALL THIRD BUTTON STYLES
+
+.third-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 50vw;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  .third-buttons {
+    padding: 20px;
+    transition: all 2s ease;
+    border-radius: 20px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    cursor: pointer;
+  }
+
+  .rush-button {
+    background-color: var(--carmine);
+    -webkit-animation: bounce-in-top 3s 25s both;
+    animation: bounce-in-top 3s 25s both;
+
+    &:hover {
+      background-color: var(--black);
+      color: var(--carmine);
+      border: none;
+      font-size: 45px;
+      padding: 25px;
+    }
+  }
+
+  .run-button {
+    background-color: var(--brown);
+    -webkit-animation: bounce-in-top 3s 23s both;
+    animation: bounce-in-top 3s 23s both;
+
+    &:hover {
+      background-color: var(--black);
+      color: var(--brown);
+      border: none;
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
+
+  .quit-buttonC {
+    background-color: var(--blue);
+    color: var(--aliceblue);
+
+    &:hover {
+      background-color: var(--black);
+      color: var(--blue);
+      border: none;
+      font-size: 5px;
+      padding: 5px;
+    }
+  }
+}
+
+//ALL FOURTH BUTTON STYLES
+
+//ALL FIFTH BUTTON STYLES
