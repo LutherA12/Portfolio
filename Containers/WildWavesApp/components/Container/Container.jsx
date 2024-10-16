@@ -4,7 +4,7 @@ import {
   WavePool,
 } from "../../helpers/ComponentExports";
 import { globalPrompt } from "../../helpers/Data";
-import "./Container.Styles.scss";
+import "./Container.styles.scss";
 
 export default function Container() {
   return (
