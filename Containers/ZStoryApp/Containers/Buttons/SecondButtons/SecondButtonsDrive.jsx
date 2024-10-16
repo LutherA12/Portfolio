@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { useState } from "react";
 import {
   DriveBasket,
   DriveCart,
@@ -12,7 +12,7 @@ import {
   cart,
   neither,
   horror,
-} from "../../../helpers/Constants";
+} from "../../../helpers/Data";
 import "../Buttons.Styles.scss";
 
 export default function SecondButtonsDrive() {

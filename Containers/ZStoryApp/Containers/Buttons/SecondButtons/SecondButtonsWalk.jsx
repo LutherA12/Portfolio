@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { useState } from "react";
 import {
   WalkBasket,
   WalkCart,
@@ -8,13 +8,11 @@ import {
 import {
   buttons,
   quitClasses,
-  buttontext,
-  quittext,
   basket,
   cart,
   neither,
   horror,
-} from "../../../helpers/Constants";
+} from "../../../helpers/Data";
 import "../Buttons.Styles.scss";
 
 export default function SecondButtonsWalk() {

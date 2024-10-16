@@ -1,0 +1,38 @@
+.heading-container {
+  height: 50px;
+  width: 130px;
+  margin: auto;
+}
+
+.heading,
+.intro {
+  text-decoration: none;
+}
+
+.intro-container {
+  height: 50px;
+  width: 400px;
+  margin: auto;
+}
+
+.intro-text-container {
+  margin: auto;
+  padding-top: 25px;
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+}
+
+.github-link {
+  color: var(--accentColor);
+  text-decoration: underline;
+}

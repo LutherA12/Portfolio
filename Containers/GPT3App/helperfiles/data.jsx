@@ -5,8 +5,10 @@ import blog5 from "../assets/blog05.png";
 
 export const verification = {
   validation: /^[A-Za-z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/,
-  errorTextDelay: 12000,
-  errorMessage: `*For username & password max 30 chars : min 8 chars : Alphanumeric & Special characters are allowed*`,
+  errorTextDelay: 18000,
+  errorMessage: `*Please fill out all information : Username & Password max 30 chars min 8 chars : Alphanumeric & Special characters are allowed*`,
+  maxLength: 30,
+  minLength: 8,
 };
 
 export const BlogData = [
@@ -94,4 +96,14 @@ export const Gpt3DataB = [
   },
 ];
 
-
+export const headerText = {
+  bodyA: "Let's Build Something Amazing with GPT-3 OpenAI!!",
+  bodyB: `Have you ever been excited about something? Silly question right? We all
+      have! What excites us the most is what we call GPT-3 an extremely
+      intelligent AI system that will be the next big thing! We know you've
+      visited this site for a reason and since you're here please allow us to
+      make it worth your time!`,
+  bodyC: "Get Started!",
+  bodyD:
+    "We've had at least 1,600 people request access and visit our site in the last 24 hours",
+};

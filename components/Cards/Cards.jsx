@@ -5,6 +5,13 @@ import "./Cards.Styles.scss";
 export default function Cards() {
   return (
     <>
+      <div className="text-containers" style={{ paddingBottom: "4vh" }}>
+        The second section here features few of my applications on the cards
+        below along with a short description. I've also added an error page for
+        all routes if there is a typo in the address bar. Please explore, enjoy
+        & see if you can find my error page!
+      </div>
+
       {cards.map((cards, index) => {
         return (
           <div className={`${cards.cardContainer} card-containers`} key={index}>

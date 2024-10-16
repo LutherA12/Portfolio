@@ -13,11 +13,12 @@ import {
   DataArticle,
   PointArticle,
   SignUpForm,
+  SignInPage,
   ThankYouPage,
 } from "../Portfolio/Containers/GPT3App/components/componentExports.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useEffect } from "react";
-import "./Main.Styles.scss";
+import "./App.Styles.scss";
 
 const router = createBrowserRouter([
   {
@@ -78,6 +79,11 @@ const router = createBrowserRouter([
   {
     path: "/SignUpForm",
     element: <SignUpForm />,
+    errorElement: <Errorpage />,
+  },
+  {
+    path: "/SignInPage",
+    element: <SignInPage />,
     errorElement: <Errorpage />,
   },
   {

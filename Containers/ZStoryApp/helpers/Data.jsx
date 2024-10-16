@@ -44,25 +44,3 @@ export const quitClasses = {
   D: `quit-buttonD`,
   E: `quit-buttonE`,
 };
-
-export const buttontext = [
-  "Red to Play!",
-  "Blue to Quit!",
-  "Green to Drive...",
-  "Yellow to Walk...",
-  "Black for a Hand Basket...",
-  "Silver for a Shopping Cart...",
-  "Orange for Neither...",
-  "Carmine to Rush...",
-  "Brown to Run...",
-  "Purple for Storefront...",
-  "Gold for Storeback...",
-];
-
-export const quittext = [
-  "quit-button",
-  "quit-button-second",
-  "quit-button-third",
-  "quit-button-fourth",
-  "quit-button-fifth",
-];

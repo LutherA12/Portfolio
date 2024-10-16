@@ -8,4 +8,5 @@ export { default as BreakingArticle } from "./articles/breaking-article.jsx";
 export { default as DataArticle } from "./articles/data-article.jsx";
 export { default as PointArticle } from "./articles/point-article.jsx";
 export { default as SignUpForm } from "./sign-up-form/sign-up-form.jsx";
+export { default as SignInPage } from "./sign-in-page/sign-in-page.jsx";
 export { default as ThankYouPage } from "./thank-you-page/thank-you-page.jsx";

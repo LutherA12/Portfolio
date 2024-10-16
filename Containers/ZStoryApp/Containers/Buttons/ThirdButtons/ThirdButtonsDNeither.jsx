@@ -1,5 +1,5 @@
-import { React, useState } from "react";
-import { buttontext, quittext } from "../../../helpers/Constants";
+import { useState } from "react";
+import { buttons, quitClasses } from "../../../helpers/Data";
 import {
   DriveNRush,
   DriveNRun,
@@ -47,7 +47,7 @@ export default function ThirdButtonsDNeither() {
       disabled={isRushDisabled}
       type="button"
     >
-      {buttontext[7]}
+      {buttons.rush}
     </button>,
     <button
       className="run-button third-buttons"
@@ -55,15 +55,15 @@ export default function ThirdButtonsDNeither() {
       disabled={isRunDisabled}
       type="button"
     >
-      {buttontext[8]}
+      {buttons.run}
     </button>,
     <button
-      className={`${quittext[2]} third-buttons`}
+      className={`${quitClasses.C} third-buttons`}
       onClick={quitButtonHandler}
       disabled={isQuitDisabled}
       type="button"
     >
-      {buttontext[1]}
+      {buttons.quit}
     </button>,
   ];
 

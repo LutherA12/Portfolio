@@ -3,7 +3,6 @@ import { useState } from "react";
 import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import "./navbar.styles.scss";
-import { SignUpForm } from "../componentExports.jsx";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -40,7 +39,10 @@ export default function Navbar() {
 
       <div>
         <form className="gpt3__navbar-sign">
-          <p>Sign In</p>
+          <NavLink to="/SignInPage">
+            <p>Sign In</p>
+          </NavLink>
+
           <NavLink to="/SignUpForm">
             <button type="button">Sign Up</button>
           </NavLink>

@@ -1,6 +1,6 @@
 import React from "react";
 import { ThirdButtonsWCart } from "../../../helpers/AllFileExports";
-import { StoreSound } from "../../../helpers/Constants";
+import { StoreSound } from "../../../helpers/Data";
 import "../Stories.Styles.scss";
 
 export default function WalkCart() {

@@ -1,16 +1,10 @@
-import { React, useState } from "react";
+import { useState } from "react";
 import {
   Drive,
   Walk,
   QuitBeforeFirstStory,
 } from "../../helpers/AllFileExports";
-import {
-  buttons,
-  quitClasses,
-  car,
-  nature,
-  hit,
-} from "../../helpers/Constants";
+import { buttons, quitClasses, car, nature, hit } from "../../helpers/Data";
 import "./Buttons.Styles.scss";
 
 export default function FirstButtons() {

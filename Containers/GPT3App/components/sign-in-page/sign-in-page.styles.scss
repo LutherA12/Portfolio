@@ -1,0 +1,31 @@
+.sign-in-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 370px;
+  margin: 110px auto 0;
+  padding: 0 100px;
+  font-size: var(--article-font);
+  letter-spacing: 1px;
+}
+
+.sign-in-page-btn-container {
+  margin-top: 20px;
+
+  button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    cursor: pointer;
+
+    &:hover {
+      -webkit-animation: wobble-hor-bottom 0.8s both;
+      animation: wobble-hor-bottom 0.8s both;
+    }
+  }
+}

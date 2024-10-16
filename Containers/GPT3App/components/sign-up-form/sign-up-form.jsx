@@ -43,12 +43,12 @@ export default function SignUpForm() {
           className="sign-up-form-container gradient__bg"
           onSubmit={formSubmitHandler}
         >
-          <h4>Welcome to GPT3!</h4>
+          <h4 style={{ fontSize: "35px" }}>Welcome to GPT3!</h4>
           <input
             type="text"
             placeholder="Create your username"
-            maxLength={30}
-            minLength={8}
+            maxLength={verification.maxLength}
+            minLength={verification.minLength}
             value={userName}
             onChange={userNameHandler}
             autoComplete="true"
@@ -56,8 +56,8 @@ export default function SignUpForm() {
           <input
             type="password"
             placeholder="Create your password"
-            maxLength={30}
-            minLength={8}
+            maxLength={verification.maxLength}
+            minLength={verification.minLength}
             value={password}
             onChange={userPasswordHandler}
             autoComplete="true"
@@ -65,7 +65,7 @@ export default function SignUpForm() {
           <input
             type="email"
             placeholder="Enter your email"
-            maxLength={30}
+            maxLength={verification.maxLength}
             value={email}
             onChange={userEmailHandler}
             autoComplete="true"
