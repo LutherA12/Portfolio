@@ -16,11 +16,19 @@ import {
   SignInPage,
   ThankYouPage,
 } from "./Containers/GPT3App/components/componentExports.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 import { useEffect } from "react";
 import "./App.Styles.scss";
 
 const router = createBrowserRouter([
+  {
+    path: "/Portfolio",
+    element: <Navigate to="/" replace />,
+  },
   {
     path: "/",
     element: <Homepage />,
