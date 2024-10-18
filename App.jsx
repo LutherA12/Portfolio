@@ -15,14 +15,14 @@ import {
   SignUpForm,
   SignInPage,
   ThankYouPage,
-} from "../Portfolio/Containers/GPT3App/components/componentExports.jsx";
+} from "./Containers/GPT3App/components/componentExports.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.Styles.scss";
 
 const router = createBrowserRouter([
   {
-    path: "/Portfolio",
+    path: "/",
     element: <Homepage />,
     errorElement: <Errorpage />,
   },
