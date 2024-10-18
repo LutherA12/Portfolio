@@ -22,7 +22,7 @@ import "./App.Styles.scss";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Portfolio",
     element: <Homepage />,
     errorElement: <Errorpage />,
   },
