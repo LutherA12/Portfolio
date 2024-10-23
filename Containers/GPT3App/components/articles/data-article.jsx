@@ -18,7 +18,9 @@ export default function DataArticle() {
         <br />
         <br />
         <NavLink to="/GPT3App" className="articles-home-link">
-          Take me home!
+          <button type="button" className="article-buttons">
+            Take me home!
+          </button>
         </NavLink>
       </p>
     </div>

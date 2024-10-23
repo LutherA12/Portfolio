@@ -7,9 +7,10 @@ export default function Cards() {
     <>
       <div className="text-containers" style={{ paddingBottom: "4vh" }}>
         The second section here features few of my applications on the cards
-        below along with a short description. I've also added an error page for
-        all routes if there is a typo in the address bar. Please explore, enjoy
-        & see if you can find my error page!
+        below along with a short description. I've added an error page for all
+        routes if there is a typo in the address bar & each application has a
+        home link that will bring you right back to this page. Please explore &
+        enjoy!
       </div>
 
       {cards.map((cards, index) => {

@@ -19,7 +19,9 @@ export default function PointArticle() {
         <br />
         <br />
         <Link to="/GPT3App" className="articles-home-link">
-          Take me home!
+          <button type="button" className="article-buttons">
+            Take me home!
+          </button>
         </Link>
       </p>
     </div>

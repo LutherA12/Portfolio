@@ -17,10 +17,10 @@ export default function Header() {
       </div>
 
       <div className="intro-text-container text-containers">
-        I'm a self-taught developer that has been coding in React for about
-        three years. I also have experience in Firebase (a database service),
-        fetching API's, & using Context. Vite is the framework being used for
-        this project & here is a link to my{" "}
+        I'm a self-taught developer that has been coding in React for about two
+        years. I also have experience in Firebase (a database service), fetching
+        API's, & using Context. Vite is the framework being used for this
+        project & here is a link to my{" "}
         <a href="https://github.com/LutherA12" className="github-link">
           Github
         </a>{" "}

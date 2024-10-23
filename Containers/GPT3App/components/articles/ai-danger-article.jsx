@@ -21,7 +21,9 @@ export default function AiDangerArticle() {
         <br />
       </p>
       <NavLink to="/GPT3App" className="articles-home-link">
-        Take me home!
+        <button type="button" className="article-buttons">
+          Take me home!
+        </button>
       </NavLink>
     </div>
   );

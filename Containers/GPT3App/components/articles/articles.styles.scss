@@ -58,9 +58,15 @@ body {
   border-radius: 400px;
 }
 
-.articles-home-link {
+.article-buttons {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  cursor: pointer;
+
   &:hover {
-    text-decoration: underline;
-    color: var(--accentColor);
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
   }
 }
