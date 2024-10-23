@@ -1,5 +1,5 @@
 import "./Header.Styles.scss";
-import me from "../../Assets/me.png";
+import me from "/Assets/me.png";
 
 export default function Header() {
   return (

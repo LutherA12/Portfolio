@@ -1,3 +1,8 @@
+import AI from "/Assets/AI.png";
+import WildWaves from "/Assets/WildWaves.png";
+import Monster from "/Assets/Monster.png";
+import Zstory from "/Assets/Zstory.png";
+
 export const cards = [
   {
     desc: `GPT3 is a full landing page that can be altered to fit any customers
@@ -7,10 +12,10 @@ export const cards = [
         page are clickable & will go to different pages, also the navbar moves
         you to different portions of the page while the home link will bring you
         back here.`,
-    img: "../Assets/AI.png",
+    img: AI,
     title: "GPT3",
     linkTo: "/GPT3App",
-    altImg: "AI not found",
+    altImg: "AI img not found",
     cardLinkColor: "gpt3-card-link",
     cardTitleDiv: "ai-card-title",
     cardDescColor: "ai-desc",
@@ -24,10 +29,10 @@ export const cards = [
         technical side, I've employed the useState hook along with a few ternary
         operations, the setTimout hook as well as use of Regex for user input
         verification.`,
-    img: "../Assets/WildWaves.png",
+    img: WildWaves,
     title: "Wild Waves",
     linkTo: "/WildWavesApp",
-    altImg: "Wild Waves not found",
+    altImg: "Wild Waves img not found",
     cardLinkColor: "wild-card-link",
     cardTitleDiv: "wild-card-title",
     cardDescColor: "wild-desc",
@@ -40,10 +45,10 @@ export const cards = [
         then parses the returned object into JSON, I then use the filter method
         for the name (target.value) in order search & sort each name as it is
         typed.`,
-    img: "../Assets/Monster.png",
+    img: Monster,
     title: "Monster Rolodex",
     linkTo: "/MonsterApp",
-    altImg: "Monster not found",
+    altImg: "Monster img not found",
     cardLinkColor: "monster-card-link",
     cardTitleDiv: "monster-card-title",
     cardDescColor: "monster-desc",
@@ -56,10 +61,10 @@ export const cards = [
         There is nothing sexual in this story, but there is
         some profanity. On the technical side, I've employed useState very
         heavily in this app. The story isn't fully finished yet but the codebase will stay largely the same aside from a few tweaks in the coming weeks.`,
-    img: "../Assets/Zstory.png",
+    img: Zstory,
     title: "Z Story",
     linkTo: "/ZStoryApp",
-    altImg: "Z Story not found",
+    altImg: "Z Story img not found",
     cardLinkColor: "zstory-card-link",
     cardTitleDiv: "zstory-card-title",
     cardDescColor: "zstory-desc",
