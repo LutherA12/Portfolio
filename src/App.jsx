@@ -1,11 +1,11 @@
-import { Homepage, Errorpage } from "./components/componentExports";
+import { Homepage, Errorpage } from "../src/components/componentExports.jsx";
 import {
   GPT3App,
   MonsterApp,
   CrownApp,
   ZStoryApp,
   WildWavesApp,
-} from "./Containers/ContainerExports.jsx";
+} from "../src/Containers/ContainerExports.jsx";
 import {
   Gpt3Article,
   AiDangerArticle,
@@ -15,20 +15,12 @@ import {
   SignUpForm,
   SignInPage,
   ThankYouPage,
-} from "./Containers/GPT3App/components/componentExports.jsx";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from "react-router-dom";
+} from "../src/Containers/GPT3App/components/componentExports.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.Styles.scss";
 
 const router = createBrowserRouter([
-  {
-    path: "/Portfolio",
-    element: <Navigate to="/" replace />,
-  },
   {
     path: "/",
     element: <Homepage />,

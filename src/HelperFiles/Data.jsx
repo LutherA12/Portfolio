@@ -1,7 +1,7 @@
-import AI from "/Assets/AI.png";
-import WildWaves from "/Assets/WildWaves.png";
-import Monster from "/Assets/Monster.png";
-import Zstory from "/Assets/Zstory.png";
+import AI from "../Assets/AI.png";
+import WildWaves from "../Assets/WildWaves.png";
+import Monster from "../Assets/Monster.png";
+import Zstory from "../Assets/Zstory.png";
 
 export const cards = [
   {
@@ -71,6 +71,46 @@ export const cards = [
     cardContainer: "zstory-card-container",
   },
 ];
+
+export const headerText = {
+  textA: `I'm a self-taught developer that has been coding in React for about two
+        years. I also have experience in Firebase (a database service), fetching
+        API's, & using Context. Vite is the framework being used for this
+        project & here is a link to my`,
+  textB: `repositories. I've worked hard to ensure my codebases are scalable,
+        maintainable, reuseable & DRY as far as the technical aspect & my
+        current knowledge will allow, however, I believe my strongest skills are
+        my soft skills. I'm a forever student that is always willing to learn &
+        teach, furthermore, I have an extensive background in customer service.
+        For 15 years now I've engaged with many different customers face to
+        face, door to door, through emails, phone calls, & even a few written
+        letters; so I'm not only experienced on how to speak to others with
+        kindness, respect, & empathy, but I also know how to translate technical
+        jorgon into everyday language without being condesending. I'm also
+        primarily a kinesthetic learner so I very much enjoy researching &
+        learning by doing.`,
+};
+
+export const cardText = {
+  textA: `The second section here features few of my applications on the cards
+        below along with a short description. I've added an error page for all
+        routes if there is a typo in the address bar & each application has a
+        home link that will bring you right back to this page. Please explore &
+        enjoy!`,
+};
+
+export const footerText = {
+  textA: `For this final section, I think it's best to end with the question of "why
+      hire me?". I've already mentioned that I'm a forever student & that
+      customer service & technology have been at the forefront of my
+      professional career, but more than that, I've worked with & talked to a
+      lot of different people from many different cultures & walks of life. I
+      believe I will be a valuable asset in regard to being teachable without
+      being arrogant, collabrative without being controlling, communicative
+      without being condecending & if put in a position of power, firm without
+      being overbearing.Thank you for taking the time to visit my website & for
+      giving me an opportunity to work for you.`,
+};
 
 /**
  * 

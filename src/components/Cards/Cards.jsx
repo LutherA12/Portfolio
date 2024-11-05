@@ -1,16 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { cards } from "../../HelperFiles/Data";
+import { cards, cardText } from "../../HelperFiles/Data.jsx";
 import "./Cards.Styles.scss";
 
 export default function Cards() {
   return (
     <>
       <div className="text-containers" style={{ paddingBottom: "4vh" }}>
-        The second section here features few of my applications on the cards
-        below along with a short description. I've added an error page for all
-        routes if there is a typo in the address bar & each application has a
-        home link that will bring you right back to this page. Please explore &
-        enjoy!
+        {cardText.textA}
       </div>
 
       {cards.map((cards, index) => {
