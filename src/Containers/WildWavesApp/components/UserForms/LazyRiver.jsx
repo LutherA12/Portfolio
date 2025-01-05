@@ -7,40 +7,45 @@ export default function LazyRiver() {
   const [enterHeight, setEnterHeight] = useState(``);
   const [enterAdult, setEnterAdult] = useState(``);
 
+  const { yes, verifyChar, verifyNum, timeout, maxChar } = utils;
+  const { river, minRideHeight } = minHeight;
+  const {
+    allowedRiverA,
+    allowedRiverB,
+    deniedAll,
+    deniedRiver,
+    syntax_error,
+    river_button,
+    ask_user_height,
+    ask_user_with_adult,
+  } = globalPrompt;
+
   const riverVerification = (enterHeight, enterAdult) => {
-    if (enterHeight >= minHeight.river) {
-      setIsRiverAllowed(globalPrompt.allowedRiverA);
+    if (enterHeight >= river) {
+      setIsRiverAllowed(allowedRiverA);
     } else if (
-      enterHeight < minHeight.river &&
-      enterHeight > minHeight.minRideHeight &&
-      utils.yes.includes(enterAdult)
+      enterHeight < river &&
+      enterHeight > minRideHeight &&
+      yes.includes(enterAdult)
     ) {
-      setIsRiverAllowed(globalPrompt.allowedRiverB);
-    } else if (enterHeight < minHeight.minRideHeight) {
-      setIsRiverAllowed(globalPrompt.deniedAll);
+      setIsRiverAllowed(allowedRiverB);
+    } else if (enterHeight < minRideHeight) {
+      setIsRiverAllowed(deniedAll);
     } else {
-      setIsRiverAllowed(globalPrompt.deniedRiver);
+      setIsRiverAllowed(deniedRiver);
     }
   };
 
   const riverClickHandler = () => {
     {
-      enterHeight.match(utils.verifyNum) && enterAdult.match(utils.verifyChar)
+      enterHeight.match(verifyNum) && enterAdult.match(verifyChar)
         ? riverVerification(enterHeight, enterAdult)
-        : setIsRiverAllowed(globalPrompt.syntax_error);
+        : setIsRiverAllowed(syntax_error);
     }
 
     setTimeout(() => {
       setIsRiverAllowed(isRiverAllowed);
-    }, utils.timeout);
-  };
-
-  const riverHeightHandler = (e) => {
-    setEnterHeight(e.target.value);
-  };
-
-  const riverAdultHandler = (e) => {
-    setEnterAdult(e.target.value);
+    }, timeout);
   };
 
   const lazyRiverInfo = [
@@ -49,23 +54,23 @@ export default function LazyRiver() {
       className="river-button choice-buttons"
       onClick={riverClickHandler}
     >
-      {globalPrompt.river_button}
+      {river_button}
     </button>,
     <input
       type="text"
       className="river-height input-fields"
-      placeholder={globalPrompt.ask_user_height}
-      onChange={riverHeightHandler}
+      placeholder={ask_user_height}
+      onChange={(e) => setEnterHeight(e.target.value)}
       value={enterHeight}
-      maxLength={utils.maxChar}
+      maxLength={maxChar}
     />,
     <input
       type="text"
       className="river-adult input-fields"
-      placeholder={globalPrompt.ask_user_with_adult}
-      onChange={riverAdultHandler}
+      placeholder={ask_user_with_adult}
+      onChange={(e) => setEnterAdult(e.target.value)}
       value={enterAdult}
-      maxLength={utils.maxChar}
+      maxLength={maxChar}
     />,
   ];
 

@@ -7,40 +7,45 @@ export default function WavePool() {
   const [enterHeight, setEnterHeight] = useState(``);
   const [enterAdult, setEnterAdult] = useState(``);
 
+  const { yes, verifyNum, verifyChar, timeout, maxChar } = utils;
+  const { pool, minRideHeight } = minHeight;
+  const {
+    allowedPoolA,
+    allowedPoolB,
+    deniedAll,
+    deniedPool,
+    syntax_error,
+    wave_button,
+    ask_user_height,
+    ask_user_with_adult,
+  } = globalPrompt;
+
   const poolVerification = (enterHeight, enterAdult) => {
-    if (enterHeight >= minHeight.pool) {
-      setIsPoolAllowed(globalPrompt.allowedPoolA);
+    if (enterHeight >= pool) {
+      setIsPoolAllowed(allowedPoolA);
     } else if (
-      enterHeight < minHeight.pool &&
-      enterHeight > minHeight.minRideHeight &&
-      utils.yes.includes(enterAdult)
+      enterHeight < pool &&
+      enterHeight > minRideHeight &&
+      yes.includes(enterAdult)
     ) {
-      setIsPoolAllowed(globalPrompt.allowedPoolB);
-    } else if (enterHeight < minHeight.minRideHeight) {
-      setIsPoolAllowed(globalPrompt.deniedAll);
+      setIsPoolAllowed(allowedPoolB);
+    } else if (enterHeight < minRideHeight) {
+      setIsPoolAllowed(deniedAll);
     } else {
-      setIsPoolAllowed(globalPrompt.deniedPool);
+      setIsPoolAllowed(deniedPool);
     }
   };
 
   const poolClickHandler = () => {
     {
-      enterHeight.match(utils.verifyNum) && enterAdult.match(utils.verifyChar)
+      enterHeight.match(verifyNum) && enterAdult.match(verifyChar)
         ? poolVerification(enterHeight, enterAdult)
-        : setIsPoolAllowed(globalPrompt.syntax_error);
+        : setIsPoolAllowed(syntax_error);
     }
 
     setTimeout(() => {
       setIsPoolAllowed(isPoolAllowed);
-    }, utils.timeout);
-  };
-
-  const poolHeightHandler = (e) => {
-    setEnterHeight(e.target.value);
-  };
-
-  const poolAdultHandler = (e) => {
-    setEnterAdult(e.target.value);
+    }, timeout);
   };
 
   const wavePoolInfo = [
@@ -49,24 +54,24 @@ export default function WavePool() {
       className="wave-button choice-buttons"
       onClick={poolClickHandler}
     >
-      {globalPrompt.wave_button}
+      {wave_button}
     </button>,
 
     <input
       type="text"
       className="pool-height input-fields"
-      placeholder={globalPrompt.ask_user_height}
-      onChange={poolHeightHandler}
+      placeholder={ask_user_height}
+      onChange={(e) => setEnterHeight(e.target.value)}
       value={enterHeight}
-      maxLength={utils.maxChar}
+      maxLength={maxChar}
     />,
     <input
       type="text"
       className="pool-adult input-fields"
-      placeholder={globalPrompt.ask_user_with_adult}
-      onChange={poolAdultHandler}
+      placeholder={ask_user_with_adult}
+      onChange={(e) => setEnterAdult(e.target.value)}
       value={enterAdult}
-      maxLength={utils.maxChar}
+      maxLength={maxChar}
     />,
   ];
 

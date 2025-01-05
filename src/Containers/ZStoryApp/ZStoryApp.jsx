@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import { Intro } from "./helpers/AllFileExports";
 import "./ZStoryApp.Styles.scss";
 
-function App() {
+export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

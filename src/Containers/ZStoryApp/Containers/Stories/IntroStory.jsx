@@ -1,8 +1,12 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import { FirstButtons } from "../../helpers/AllFileExports";
 import "./Stories.Styles.scss";
 
 export default function IntroStory() {
+  useEffect(() => {
+    window.scrollTo(0, 1000);
+  }, []);
+
   return (
     <div className="intro-story-container story-containers">
       <p>
@@ -23,4 +27,3 @@ export default function IntroStory() {
     </div>
   );
 }
-

@@ -23,6 +23,7 @@ export default function Intro() {
     setIsPlayDisabled(true);
     setIsQuitDisabled(true);
     hit.play();
+    handleFocus();
 
     setQuitStory(<QuitBeforeIntroStory />);
   };

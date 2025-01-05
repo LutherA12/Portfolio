@@ -7,6 +7,7 @@ import grabBasket from "../assets/audio/grabBasket.mp3";
 import grabCart from "../assets/audio/grabCart.mp3";
 import grabNeither from "../assets/audio/grabNeither.mp3";
 import horrorSwell from "../assets/audio/horrorSwell.mp3";
+import { useRef } from "react";
 
 export const openDoor = new Audio(door);
 export const hit = new Audio(horrorHit);
@@ -44,3 +45,9 @@ export const quitClasses = {
   D: `quit-buttonD`,
   E: `quit-buttonE`,
 };
+
+/*export const focusRef = useRef(null)
+
+export const handleFocus = async () => {
+  {focusRef.current && focusRef.current.focus()}
+}*/
